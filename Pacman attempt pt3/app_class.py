@@ -25,6 +25,9 @@ class App:
             self.clock.tick(FPS)
         pygame.quit()
         sys.exit()
+######################## Help Functions ################################
+
+
 
 ######################## INTRO FUNCTIONS ################################
 
@@ -39,4 +42,5 @@ class App:
 
     def start_draw(self):
         self.screen.fill(BLACK)
+        self.draw_text(self.screen,START_TEXT_SIZE,(170, 132,50))
         pygame.display.update()
